@@ -9,7 +9,10 @@ using namespace std;
  
 int main() {
     int n, k, a;
+    long long sum;
     cin << n << k << a;
-    
+
+    sum = ((n*k)/a);
+
     return 0;
 }
