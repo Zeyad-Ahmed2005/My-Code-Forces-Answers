@@ -8,6 +8,8 @@
 using namespace std;
  
 int main() {
+    int n, k, a;
+    cin << n << k << a;
     
     return 0;
 }
