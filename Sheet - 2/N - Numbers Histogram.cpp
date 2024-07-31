@@ -5,9 +5,9 @@
 #include <string>
 #include <cctype>
 #include <vector>
-
+ 
 using namespace std;
-
+ 
 int main() {
     char sign;
     long long array_size, number;
@@ -17,13 +17,13 @@ int main() {
         cin >> number;
         list1[i] = number;
     }
-
+ 
     for(int loop = 0; loop < array_size; loop++){
         for(int x = 0; x <list1[loop]; x++){
             cout << sign;
         }
         cout << "\n";
     }
-
+ 
     return 0;
 }
