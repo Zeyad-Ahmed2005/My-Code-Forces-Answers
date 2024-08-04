@@ -8,10 +8,10 @@
 
 using namespace std;
 
-int decimal_to_binary(int number)
+int decimal_to_binary(long long number)
 {
-    int binary_num = 0;
-    int i = 0;
+    long long binary_num = 0;
+    long long i = 0;
     while (number > 0)
     {
         binary_num += (number % 2) * pow(10, i);
@@ -21,9 +21,9 @@ int decimal_to_binary(int number)
     return binary_num;
 }
 
-int zero_remover(int binary_num)
+int zero_remover(long long binary_num)
 {
-    int zeroed = 0, counter = 1, indented;
+    long long zeroed = 0, counter = 1, indented;
     while (binary_num > 0)
     {
         if (binary_num % 10 == 0)
@@ -41,15 +41,15 @@ int zero_remover(int binary_num)
     return zeroed;
 }
 
-int binary_to_decimal(int zeroed)
+int binary_to_decimal(long long zeroed)
 {
-    int power = 0, sum = 0;
+    long long power = 0, sum = 0;
     while (zeroed > 0)
     {
         zeroed = zeroed / 10;
         power = power + 1;
     }
-    for (int i = power - 1; i > -1; i--)
+    for (long long i = power - 1; i > -1; i--)
     {
         sum = sum + pow(2, i);
     }
@@ -58,11 +58,11 @@ int binary_to_decimal(int zeroed)
 
 int main()
 {
-    int tries;
+    long long tries;
     cin >> tries;
-    for (int i = 0; i < tries; i++)
+    for (long long i = 0; i < tries; i++)
     {
-        int number, binary_num, zeroed;
+        long long number, binary_num, zeroed;
         cin >> number;
         binary_num = decimal_to_binary(number);
         zeroed = zero_remover(binary_num);
