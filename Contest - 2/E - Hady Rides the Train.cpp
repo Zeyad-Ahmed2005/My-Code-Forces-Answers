@@ -10,6 +10,8 @@ using namespace std;
 
 int main()
 {
-    
+    // long long seat_id;
+    // cin >> seat_id;
+
     return 0;
 }
